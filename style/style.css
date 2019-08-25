@@ -534,6 +534,12 @@ header a:hover {
   width: 55vw;
   height: 100vh;
   background-color: #191919;
+  color: #fff;
+}
+
+.central #title {
+  position: relative;
+  top: 20%;
 }
 
 .product {

@@ -1,5 +1,8 @@
 const nav = document.querySelector('.nav');
 const tenda = document.querySelector('.navigation');
+
+
+
 nav.addEventListener('click', (event)=>{
     nav.classList.toggle('open');
      if(nav.classList.contains("open")) {
@@ -9,3 +12,15 @@ nav.addEventListener('click', (event)=>{
 
     }
 });
+
+
+
+// logic for json file
+
+let index = 0 ; 
+
+
+
+
+
+

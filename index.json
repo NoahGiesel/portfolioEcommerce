@@ -1,0 +1,22 @@
+[
+ 
+    {
+        "title" : "title 1",
+        "description" : "desc",
+        "price" : 220
+    }, 
+ 
+    {
+        "title" : "title 2",
+        "description" : "desc",
+        "price" : 324
+    }, 
+ 
+    {
+        "title" : "title 3",
+        "description" : "desc",
+        "price" : 242
+    }
+
+
+]

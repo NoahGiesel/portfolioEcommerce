@@ -324,9 +324,18 @@ html , body {
 
  .central {
     display: inline-block; 
-      width: 55vw;
-     height: 100vh;
-     background-color: #191919;
+    width: 55vw;
+    height: 100vh;
+    background-color: #191919;
+    color : #fff ; 
+    
+
+    #title { 
+
+        position: relative ; 
+        top : 20%;
+
+    }
      
  }
 
