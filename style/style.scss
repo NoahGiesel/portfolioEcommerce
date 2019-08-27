@@ -1,5 +1,15 @@
 @import url('https://fonts.googleapis.com/css?family=Livvic&display=swap');
 
+//title
+@import url('https://fonts.googleapis.com/css?family=Pacifico&display=swap');
+
+//description
+
+@import url('https://fonts.googleapis.com/css?family=Righteous&display=swap');
+
+
+
+
 html , body {
     height: 100vh ; 
     width: 100% ; 
@@ -342,14 +352,20 @@ html , body {
 
 
             #title { 
-                font-size: 60px ; 
+                font-size: 100px ; 
                 margin: 16% 0 0 20%;
+                font-family: 'Pacifico', cursive;
+
             }
 
             #description {
                 font-size: 15px ; 
                 margin: 15px 0 ;
                 padding: 0 50px ; 
+                font-family: 'Righteous', cursive;
+                font-weight: 400;
+                line-height: 1.5;
+
             }
             #price { 
                 display: inline-block;

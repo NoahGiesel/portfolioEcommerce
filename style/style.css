@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Livvic&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Pacifico&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Righteous&display=swap");
 html, body {
   height: 100vh;
   width: 100%;
@@ -555,14 +557,18 @@ header a:hover {
 }
 
 .main .central #title {
-  font-size: 60px;
+  font-size: 100px;
   margin: 16% 0 0 20%;
+  font-family: 'Pacifico', cursive;
 }
 
 .main .central #description {
   font-size: 15px;
   margin: 15px 0;
   padding: 0 50px;
+  font-family: 'Righteous', cursive;
+  font-weight: 400;
+  line-height: 1.5;
 }
 
 .main .central #price {
