@@ -10,6 +10,7 @@ body {
   padding: 0;
   background-color: #191919;
   font-family: "Livvic", sans-serif;
+  overflow: hidden;
 }
 
 * {
@@ -568,7 +569,6 @@ header a:hover {
       -ms-flex-align: center;
           align-items: center;
   z-index: 200;
-  display: none;
 }
 
 @media (max-width: 724px) {
@@ -837,8 +837,8 @@ header a:hover {
 .main .product .clock_img {
   width: 40%;
   position: absolute;
-  left: 50%;
-  top: 40%;
+  left: 45%;
+  top: 45%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
 }

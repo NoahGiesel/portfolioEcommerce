@@ -18,7 +18,7 @@ body {
   padding: 0;
   background-color: #191919; 
   font-family: "Livvic", sans-serif;
-  //overflow: hidden;
+  overflow: hidden;
 }
 
 * {
@@ -342,8 +342,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 200;
-  display: none;
+  z-index: 200; 
 
   @media  (max-width: 724px) {
     height: 90vh;
@@ -570,8 +569,8 @@ header {
     .clock_img { 
         width: 40%;
         position: absolute;
-        left : 50% ;
-        top : 40%;
+        left : 45% ;
+        top : 45%;
         transform: translate(-50%,-50%)
     }
   }
