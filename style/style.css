@@ -4,12 +4,11 @@
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro");
 html,
 body {
-  height: 100vh;
+  height: 100%;
   width: 100%;
   margin: 0;
   padding: 0;
   background-color: #191919;
-  overflow: hidden;
   font-family: "Livvic", sans-serif;
 }
 
@@ -69,6 +68,13 @@ header .wrapper {
     top: 50%;
     -webkit-transform: translate(-50%, -50%) scale(0.65);
             transform: translate(-50%, -50%) scale(0.65);
+  }
+}
+
+@media (max-width: 600px) {
+  header .wrapper {
+    -webkit-transform: translate(-50%, -50%) scale(0.45);
+            transform: translate(-50%, -50%) scale(0.45);
   }
 }
 
@@ -533,11 +539,7 @@ header a {
 
 @media (max-width: 724px) {
   header a {
-    width: auto;
-    right: -25%;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-            transform: translateY(-50%);
+    display: none;
   }
 }
 
@@ -565,12 +567,14 @@ header a:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  z-index: 200;
+  display: none;
 }
 
 @media (max-width: 724px) {
   .navigation {
-    height: 90vw;
-    width: 100vh;
+    height: 90vh;
+    width: 100vw;
     position: absolute;
     top: 10vh;
     left: 0;
@@ -609,8 +613,8 @@ header a:hover {
     display: grid;
     -ms-grid-columns: none;
         grid-template-columns: none;
-    -ms-grid-rows: 50% 50%;
-        grid-template-rows: 50% 50%;
+    -ms-grid-rows: 60% 40%;
+        grid-template-rows: 60% 40%;
     height: 90vh;
     width: 100vw;
   }
@@ -651,6 +655,7 @@ header a:hover {
 @media (max-width: 724px) {
   .main .central #title {
     font-size: 2rem;
+    margin: 3% 60px 0 20%;
   }
 }
 
@@ -677,6 +682,15 @@ header a:hover {
   }
 }
 
+.main .central .price_button__container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: none;
+      grid-template-rows: none;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+}
+
 .main .central .pricing {
   text-align: end;
   padding: 10px 60px;
@@ -684,11 +698,7 @@ header a:hover {
 
 @media (max-width: 660px) {
   .main .central .pricing {
-    position: absolute;
-    right: 0;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-            transform: translateY(-50%);
+    margin: 0 5px;
   }
 }
 
@@ -701,11 +711,12 @@ header a:hover {
 @media (max-width: 660px) {
   .main .central .pricing #price {
     font-size: 20px;
+    margin: 0;
   }
 }
 
 .main .central .pricing #cost {
-  font-size: 60px;
+  font-size: 40px;
   display: inline-block;
 }
 
@@ -743,11 +754,7 @@ header a:hover {
 
 @media (max-width: 660px) {
   .main .central .buttonContainer {
-    position: absolute;
-    left: -30%;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-            transform: translateY(-50%);
+    padding: 0;
   }
 }
 
@@ -824,5 +831,15 @@ header a:hover {
   height: 100vh;
   width: 100%;
   background-color: #f3f3f3;
+  position: relative;
+}
+
+.main .product .clock_img {
+  width: 40%;
+  position: absolute;
+  left: 50%;
+  top: 40%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 /*# sourceMappingURL=style.css.map */
